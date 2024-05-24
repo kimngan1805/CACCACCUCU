@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="couponstyle.css">
+</head>
+<body>
+    <div class="coupon">
+        <div class="container">
+            <h3>Company Logo</h3>
+        </div>
+        <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/menu-1.jpg" alt="Avatar" style="width:100%;">
+        <div class="container" style="background-color:white">
+            <h2><b>5% OFF YOUR PURCHASE</b></h2>
+            <p>Lorem ipsum..</p>
+        </div>
+        <div class="container">
+            <span id="cpnCode">BOH232</span>
+            <span id="cpnBtn">COPY CODE</span>
+            <p class="expire">Expires: June 30, 2024</p>
+        </div>
+
+        <div class="containerb">
+            <h3>Company Logo</h3>
+        </div>
+        <img src="https://raw.githubusercontent.com/programmercloud/foodlover/main/img/menu-2.jpg" alt="Avatarb" style="width:100%;">
+        <div class="containerb" style="background-color:white">
+            <h2><b>10% OFF YOUR PURCHASE</b></h2>
+            <p>Lorem ipsum..</p>
+        </div>
+        <div class="containerb">
+            <span id="cpnCode">BOH232</span>
+            <span id="cpnBtn">COPY CODE</span>
+            <p class="expire">Expires: June 30, 2024</p>
+        </div>
+    </div>
+
+    <script>
+        var cpnCode = document.getElementById("cpnCode");
+        var cpnBtn = document.getElementById("cpnBtn");
+
+        cpnBtn.onclick = function(){
+            navigator.clipboard.writeText(cpnCode.innerHTML);
+        }
+    </script>
+</body>
+</html>
